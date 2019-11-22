@@ -15,5 +15,10 @@ namespace Test_Project
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            (new AboutBox()).ShowDialog();
+        }
     }
 }

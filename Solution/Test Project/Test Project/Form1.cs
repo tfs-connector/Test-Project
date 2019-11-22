@@ -20,5 +20,10 @@ namespace Test_Project
         {
             (new AboutBox()).ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello " + textBox1.Text, "Hello to You!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+        }
     }
 }

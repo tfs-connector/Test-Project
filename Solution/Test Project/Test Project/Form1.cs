@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClassLibrary1;
 
 namespace Test_Project
 {
@@ -23,7 +24,8 @@ namespace Test_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello " + textBox1.Text, "Hello to You!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            var greeter = new Greeter();
+            MessageBox.Show(greeter.HelloMessage(textBox1.Text), "Hello to You!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
         }
     }
 }
